@@ -1,0 +1,51 @@
+&star_job
+    create_pre_main_sequence_model = .true.
+    pre_ms_relax_to_start_radiative_core = .true.
+    pre_ms_relax_num_steps = 100
+    
+    save_model_when_terminate = .true.
+    save_model_filename = 'relax.mod'
+    
+    change_initial_net = .true.
+    new_net_name = 'pp_and_cno_extras.net'
+    
+    write_profile_when_terminate = .true.
+    filename_for_profile_when_terminate = 'LOGS/relax.data'
+    
+    pre_ms_T_c = 9.9d5
+    steps_to_take_before_terminate = 1
+
+/ ! end of star_job namelist
+
+
+&eos
+    use_FreeEOS = .false.
+    !use_OPAL_SCVH = .false.
+    use_Skye = .false.
+
+/ ! end of eos namelist
+
+
+&kap
+    use_Type2_opacities = .false.
+    cubic_interpolation_in_Z = .true.
+    cubic_interpolation_in_X = .true.
+
+/ ! end of kap namelist
+
+
+&controls
+    initial_mass = 1
+    initial_z = 0.018
+    
+    mesh_delta_coeff = 1
+    
+    MLT_option = 'Cox'
+    mixing_length_alpha = 1.8
+    
+    use_gold2_tolerances = .true.
+    
+    profile_interval = -1
+    photo_interval = -1
+    
+/ ! end of controls namelist

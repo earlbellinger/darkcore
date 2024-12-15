@@ -1,0 +1,70 @@
+&star_job
+    change_initial_net = .true.
+    new_net_name = 'pp_and_cno_extras.net'
+    
+    relax_Y = .true.
+    relax_Z = .true.
+    new_Y = 0.272832246246596
+    new_Z = 0.01853349976050075
+    
+    set_initial_age = .true.
+    initial_age = 0
+
+    new_core_mass = 1d-2
+    dlg_core_mass_per_step = 1d-1
+
+/ ! end of star_job namelist
+
+
+&eos
+    use_FreeEOS = .false.
+    !use_OPAL_SCVH = .false.
+    use_Skye = .false.
+
+/ ! end of eos namelist
+
+
+&kap
+    use_Type2_opacities = .false.
+    cubic_interpolation_in_Z = .true.
+    cubic_interpolation_in_X = .true.
+
+/ ! end of kap namelist
+
+
+&controls
+    initial_mass = 1
+    initial_z = 0.02
+    
+    mesh_delta_coeff = 1
+    
+    MLT_option = 'Cox'
+    mixing_length_alpha = 1.79923729991001
+    
+    atm_T_tau_opacity = 'varying'
+    
+    use_gold2_tolerances = .true.
+
+    x_logical_ctrl(1) = .true.  ! dark core 
+    x_ctrl(1) = 1
+    
+    max_age = 11d9
+    
+    do_element_diffusion = .true.
+    do_diffusion_heating = .true.
+    diffusion_dt_limit = 7d11
+    diffusion_calculates_ionization = .true.
+    diffusion_use_full_net = .true.
+    diffusion_use_cgs_solver = .true.
+    
+    log_directory = 'LOGS'
+    pulse_data_format = 'GYRE'
+    add_atmosphere_to_pulse_data = .true.
+    add_double_points_to_pulse_data = .true.
+
+    history_interval = 1
+    profile_interval = 9999
+    photo_interval = 9999
+    
+/ ! end of controls namelist
+

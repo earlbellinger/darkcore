@@ -1,0 +1,808 @@
+&model
+    model_type = 'EVOL'
+    file = '../solar.data.GYRE'
+    file_format = 'MESA'
+/
+
+&constants
+/
+
+
+&mode
+    l=0
+/
+&mode
+    l=1
+/
+&mode
+    l=2
+/
+&mode
+    l=3
+/
+
+
+&osc
+    outer_bound = 'JCD'
+    variables_set = 'JCD'
+    inertia_norm = 'BOTH'
+    x_ref = 1
+    !inner_bound = 'ZERO_R'
+/
+
+&num
+    diff_scheme = 'MAGNUS_GL4'
+/
+
+&scan
+    grid_type = 'LINEAR'
+    freq_min_units = 'UHZ' !'UHZ'
+    freq_max_units = 'UHZ' !'UHZ'
+    freq_min = 800
+    freq_max = 4500
+    n_freq = 1000
+/
+
+&grid
+    !x_i = 1.145811e-07
+    w_ctr = 10
+    w_osc = 10
+    w_exp = 2
+/
+
+&rot
+/
+
+&ad_output
+    summary_file = 'solar-hil.dat'
+    summary_file_format = 'TXT'
+    summary_item_list = 'l,n_pg,n_p,n_g,freq,E_norm'
+    freq_units = 'UHZ' !'UHZ'
+    
+/
+
+&nad_output
+/
+
+
+&mode
+    l=4
+/
+&mode
+    l=5
+/
+&mode
+    l=6
+/
+&mode
+    l=7
+/
+&mode
+    l=8
+/
+&mode
+    l=9
+/
+&mode
+    l=10
+/
+&mode
+    l=11
+/
+&mode
+    l=12
+/
+&mode
+    l=13
+/
+&mode
+    l=14
+/
+&mode
+    l=15
+/
+&mode
+    l=16
+/
+&mode
+    l=17
+/
+&mode
+    l=18
+/
+&mode
+    l=19
+/
+&mode
+    l=20
+/
+&mode
+    l=21
+/
+&mode
+    l=22
+/
+&mode
+    l=23
+/
+&mode
+    l=24
+/
+&mode
+    l=25
+/
+&mode
+    l=26
+/
+&mode
+    l=27
+/
+&mode
+    l=28
+/
+&mode
+    l=29
+/
+&mode
+    l=30
+/
+&mode
+    l=31
+/
+&mode
+    l=32
+/
+&mode
+    l=33
+/
+&mode
+    l=34
+/
+&mode
+    l=35
+/
+&mode
+    l=36
+/
+&mode
+    l=37
+/
+&mode
+    l=38
+/
+&mode
+    l=39
+/
+&mode
+    l=40
+/
+&mode
+    l=41
+/
+&mode
+    l=42
+/
+&mode
+    l=43
+/
+&mode
+    l=44
+/
+&mode
+    l=45
+/
+&mode
+    l=46
+/
+&mode
+    l=47
+/
+&mode
+    l=48
+/
+&mode
+    l=49
+/
+&mode
+    l=50
+/
+&mode
+    l=51
+/
+&mode
+    l=52
+/
+&mode
+    l=53
+/
+&mode
+    l=54
+/
+&mode
+    l=55
+/
+&mode
+    l=56
+/
+&mode
+    l=57
+/
+&mode
+    l=58
+/
+&mode
+    l=59
+/
+&mode
+    l=60
+/
+&mode
+    l=61
+/
+&mode
+    l=62
+/
+&mode
+    l=63
+/
+&mode
+    l=64
+/
+&mode
+    l=65
+/
+&mode
+    l=66
+/
+&mode
+    l=67
+/
+&mode
+    l=68
+/
+&mode
+    l=69
+/
+&mode
+    l=70
+/
+&mode
+    l=71
+/
+&mode
+    l=72
+/
+&mode
+    l=73
+/
+&mode
+    l=74
+/
+&mode
+    l=75
+/
+&mode
+    l=76
+/
+&mode
+    l=77
+/
+&mode
+    l=78
+/
+&mode
+    l=79
+/
+&mode
+    l=80
+/
+&mode
+    l=81
+/
+&mode
+    l=82
+/
+&mode
+    l=83
+/
+&mode
+    l=84
+/
+&mode
+    l=85
+/
+&mode
+    l=86
+/
+&mode
+    l=87
+/
+&mode
+    l=88
+/
+&mode
+    l=89
+/
+&mode
+    l=90
+/
+&mode
+    l=91
+/
+&mode
+    l=92
+/
+&mode
+    l=93
+/
+&mode
+    l=94
+/
+&mode
+    l=95
+/
+&mode
+    l=96
+/
+&mode
+    l=97
+/
+&mode
+    l=98
+/
+&mode
+    l=99
+/
+&mode
+    l=100
+/
+&mode
+    l=101
+/
+&mode
+    l=102
+/
+&mode
+    l=103
+/
+&mode
+    l=104
+/
+&mode
+    l=105
+/
+&mode
+    l=106
+/
+&mode
+    l=107
+/
+&mode
+    l=108
+/
+&mode
+    l=109
+/
+&mode
+    l=110
+/
+&mode
+    l=111
+/
+&mode
+    l=112
+/
+&mode
+    l=113
+/
+&mode
+    l=114
+/
+&mode
+    l=115
+/
+&mode
+    l=116
+/
+&mode
+    l=117
+/
+&mode
+    l=118
+/
+&mode
+    l=119
+/
+&mode
+    l=120
+/
+&mode
+    l=121
+/
+&mode
+    l=122
+/
+&mode
+    l=123
+/
+&mode
+    l=124
+/
+&mode
+    l=125
+/
+&mode
+    l=126
+/
+&mode
+    l=127
+/
+&mode
+    l=128
+/
+&mode
+    l=129
+/
+&mode
+    l=130
+/
+&mode
+    l=131
+/
+&mode
+    l=132
+/
+&mode
+    l=133
+/
+&mode
+    l=134
+/
+&mode
+    l=135
+/
+&mode
+    l=136
+/
+&mode
+    l=137
+/
+&mode
+    l=138
+/
+&mode
+    l=139
+/
+&mode
+    l=140
+/
+&mode
+    l=141
+/
+&mode
+    l=142
+/
+&mode
+    l=143
+/
+&mode
+    l=144
+/
+&mode
+    l=145
+/
+&mode
+    l=146
+/
+&mode
+    l=147
+/
+&mode
+    l=148
+/
+&mode
+    l=149
+/
+&mode
+    l=150
+/
+&mode
+    l=151
+/
+&mode
+    l=152
+/
+&mode
+    l=153
+/
+&mode
+    l=154
+/
+&mode
+    l=155
+/
+&mode
+    l=156
+/
+&mode
+    l=157
+/
+&mode
+    l=158
+/
+&mode
+    l=159
+/
+&mode
+    l=160
+/
+&mode
+    l=161
+/
+&mode
+    l=162
+/
+&mode
+    l=163
+/
+&mode
+    l=164
+/
+&mode
+    l=165
+/
+&mode
+    l=166
+/
+&mode
+    l=167
+/
+&mode
+    l=168
+/
+&mode
+    l=169
+/
+&mode
+    l=170
+/
+&mode
+    l=171
+/
+&mode
+    l=172
+/
+&mode
+    l=173
+/
+&mode
+    l=174
+/
+&mode
+    l=175
+/
+&mode
+    l=176
+/
+&mode
+    l=177
+/
+&mode
+    l=178
+/
+&mode
+    l=179
+/
+&mode
+    l=180
+/
+&mode
+    l=181
+/
+&mode
+    l=182
+/
+&mode
+    l=183
+/
+&mode
+    l=184
+/
+&mode
+    l=185
+/
+&mode
+    l=186
+/
+&mode
+    l=187
+/
+&mode
+    l=188
+/
+&mode
+    l=189
+/
+&mode
+    l=190
+/
+&mode
+    l=191
+/
+&mode
+    l=192
+/
+&mode
+    l=193
+/
+&mode
+    l=194
+/
+&mode
+    l=195
+/
+&mode
+    l=196
+/
+&mode
+    l=197
+/
+&mode
+    l=198
+/
+&mode
+    l=199
+/
+&mode
+    l=200
+/
+&mode
+    l=201
+/
+&mode
+    l=202
+/
+&mode
+    l=203
+/
+&mode
+    l=204
+/
+&mode
+    l=205
+/
+&mode
+    l=206
+/
+&mode
+    l=207
+/
+&mode
+    l=208
+/
+&mode
+    l=209
+/
+&mode
+    l=210
+/
+&mode
+    l=211
+/
+&mode
+    l=212
+/
+&mode
+    l=213
+/
+&mode
+    l=214
+/
+&mode
+    l=215
+/
+&mode
+    l=216
+/
+&mode
+    l=217
+/
+&mode
+    l=218
+/
+&mode
+    l=219
+/
+&mode
+    l=220
+/
+&mode
+    l=221
+/
+&mode
+    l=222
+/
+&mode
+    l=223
+/
+&mode
+    l=224
+/
+&mode
+    l=225
+/
+&mode
+    l=226
+/
+&mode
+    l=227
+/
+&mode
+    l=228
+/
+&mode
+    l=229
+/
+&mode
+    l=230
+/
+&mode
+    l=231
+/
+&mode
+    l=232
+/
+&mode
+    l=233
+/
+&mode
+    l=234
+/
+&mode
+    l=235
+/
+&mode
+    l=236
+/
+&mode
+    l=237
+/
+&mode
+    l=238
+/
+&mode
+    l=239
+/
+&mode
+    l=240
+/
+&mode
+    l=241
+/
+&mode
+    l=242
+/
+&mode
+    l=243
+/
+&mode
+    l=244
+/
+&mode
+    l=245
+/
+&mode
+    l=246
+/
+&mode
+    l=247
+/
+&mode
+    l=248
+/
+&mode
+    l=249
+/
+&mode
+    l=250
+/
